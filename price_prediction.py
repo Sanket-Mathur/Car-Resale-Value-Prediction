@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
+import joblib
 
 data = pd.read_csv('cars.csv')
 
@@ -29,13 +30,8 @@ RFreg = RandomForestRegressor(max_features=5, max_depth=8, random_state=0).fit(X
 print('Train Score:', RFreg.score(X_train, y_train))
 print('Test Score:', RFreg.score(X_test, y_test))
 
-print('\nPridiction for user defined features:')
-p = input('Original Price in Lakhs: ')
-kms = input('Kms Driven: ')
-fuel = input('Fuel Type (0:Petrol, 1:Diesel, 2:CNG): ')
-seller = input('Seller Type (0:Dealer, 1:Individual): ')
-trans = input('Transmittion Type (0:Manual, 1:Automatic): ')
-own = input('Owners before you: ')
-age = input('Age of the car: ')
-print('\nValue = %.2f Lakhs'% RFreg.predict([[p, kms, fuel, seller, trans, own, age]]))
+filename = 'model.sav'
+joblib.dump(RFreg, filename)
+
+print('Saved the model of %s' % filename)
 
