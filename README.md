@@ -2,6 +2,9 @@
 
 This is a small scale project which predicts the resale value of a car based upon several features like original price, kms driven, seller type, transition type, years used etc.  
 
+### Display
+![Display](/Display/display.png)
+
 ### Technogies Used
 The sklearn.ensemble.RandomForestRegresser is used to train the model on a dataset from kaggle.  
 For the website, nodejs and express frameworks are used is used.  
