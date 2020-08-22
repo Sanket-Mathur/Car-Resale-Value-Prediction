@@ -7,7 +7,7 @@ This is a small scale project which predicts the resale value of a car based upo
 
 ### Technogies Used
 The sklearn.ensemble.RandomForestRegresser is used to train the model on a dataset from kaggle.  
-For the website, nodejs and express frameworks are used is used.  
+For the website, nodejs and express frameworks are used.  
 
 ### Execute it on your machine
 Step 1: Download all the contents on this repo into your system  
