@@ -16,11 +16,9 @@ app.get('/', (req, res) => {
 });
 app.post('/', urlencodedParser, (req, res) => {
 	var details = [req.body.price, req.body.kms, req.body.fuel, req.body.seller, req.body.trans, req.body.own, req.body.age];
-	console.log(details);
 	// Predicting the value by running script.py
 	var script = spawn('python3', ["script.py", details])
 	script.stdout.on('data', function(data) {
-    	console.log(data);
 		res.render('index.ejs', {data: data});
 	});	
 });

@@ -8,35 +8,80 @@
 	<body>
 		<h1>Car Resale Value Prediction</h1>
 		<h3>Project by Sanket-Mathur</h3>
+		<a id="code" href="https://github.com/Sanket-Mathur/Car-Resale-Value-Prediction"><h3>View Code</h3></a>
 		<form method="POST" action="/">
-			<p>Price (in Lakhs): 
-				<input type="text" name="price" placeholder="eg. 5.00" required>
-			</p>
-			<p>Kilometers Driven: 
-				<input type="number" name="kms" placeholder="eg. 25000" required>
-			</p>
-			<p>Fuel Type: 
-				<input type="radio" name="fuel" value="0" required>Petrol 
-				<input type="radio" name="fuel" value="1" required>Diesel 
-				<input type="radio" name="fuel" value="2" required>CNG
-			</p>
-			<p>Seller Type: 
-				<input type="radio" name="seller" value="0" required>Dealer 
-				<input type="radio" name="seller" value="1" required>Individual 
-			</p>
-			<p>Transmission Type: 
-				<input type="radio" name="trans" value="0" required>Manual 
-				<input type="radio" name="trans" value="1" required>Automatic 
-			</p>
-			<p>Owner before you:  
-				<input type="number" name="own" placeholder="eg. 0" required>
-			</p>
-			<p>Age of the Car:  
-				<input type="number" name="age" placeholder="eg. 10" required>
-			</p>
-			<input type="submit" value="Calculate!">
-			<input type="reset" value="Clear">
+			<table>
+				<tr>
+					<td>
+						<p>Price (in Lakhs):</p>
+					<td>
+					<td>
+						<input type="text" name="price" placeholder="eg. 5.00" required>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Kilometers Driven:</p>
+					<td>
+					<td>
+						<input type="number" name="kms" placeholder="eg. 25000" required>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Fuel Type:</p>
+					<td>
+					<td>
+						<input type="radio" name="fuel" value="0" required>Petrol&nbsp;
+						<input type="radio" name="fuel" value="1" required>Diesel&nbsp;
+						<input type="radio" name="fuel" value="2" required>CNG
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Seller Type:</p>
+					<td>
+					<td>
+						<input type="radio" name="seller" value="0" required>Dealer&emsp;&emsp;&ensp;
+						<input type="radio" name="seller" value="1" required>Individual
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Transmission Type:</p>
+					<td>
+					<td>
+						<input type="radio" name="trans" value="0" required>Manual&emsp;&emsp;
+						<input type="radio" name="trans" value="1" required>Automatic
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Owner before you:</p>
+					<td>
+					<td>
+						<input type="number" name="own" placeholder="eg. 0" required>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Age of the Car:</p>
+					<td>
+					<td>
+						<input type="number" name="age" placeholder="eg. 10" required>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<center><input type="submit" value="Calculate!"></center>
+					<td>
+					<td>
+						<center><input type="reset" value="Clear All"></center>
+					</td>
+				</tr>
+			</table>		
 		</form>
-		<h1><%=data%></h1>
+		<h2><%=data%></h2>
+		<img id="car-image" src="/images/car-image.png" width="500px">
 	</body>
 </html>
