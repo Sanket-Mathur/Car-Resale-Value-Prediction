@@ -9,9 +9,22 @@ This is a small scale project which predicts the resale value of a car based upo
 The sklearn.ensemble.RandomForestRegresser is used to train the model on a dataset from kaggle.  
 For the website, nodejs and express frameworks are used.  
 
+### Prerequisites  
+python3 (or python for Windows - Read Rectifying Errors)  
+node and npm
+sklearn, pandas, numpy
+
 ### Execute it on your machine
 Step 1: Download all the contents on this repo into your system  
-Step 2: Open your terminal command promt and change it directory to to the folder Website (cd path/Car-Resale-Value-Prediction/Website)  
+Step 2: Open your terminal and change its directory to the folder Website (cd path/Car-Resale-Value-Prediction/Website)  
 Step 3: Execute npm start  
 Step 4: Go to your browser and open localhost:3000  
 Step 5: Fill in the fields required and predict the value for your hypothetical car  
+
+### Recitfying Errors
+#### Getting error from child_process on script.py  
+This application was build on a Linux machine.  
+If you are running it on a windows machine, you will have to change python3 to python in app.js:20.  
+#### On clicking calculate, the application keeps on loading (waiting for localhost)  
+Delete model.sav in the main folder and execute the script price_prediction.py
+This will refresh the model that has been trained for predicting values (might take about 10-30 seconds)  
