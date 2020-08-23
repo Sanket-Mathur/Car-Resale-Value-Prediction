@@ -12,7 +12,7 @@ For the website, nodejs and express frameworks are used.
 ### Prerequisites  
 python3 (or python for Windows - Read Rectifying Errors)  
 node and npm  
-sklearn (pandas and numpy if you want to create & train a new model)
+sklearn, pandas and numpy
 
 ### Execute it on your machine  
 Step 1: Download all the contents on this repo into your system  
